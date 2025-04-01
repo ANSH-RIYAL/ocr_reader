@@ -1,0 +1,10 @@
+numpy>=1.24.0
+opencv-python>=4.8.0
+packaging==24.2
+Pillow>=10.0.0
+pytesseract>=0.3.10
+pymongo>=4.5.0
+python-dotenv>=1.0.0
+PyYAML>=6.0.1
+ultralytics>=8.0.0  # for YOLOv8
+google-cloud-vision>=3.4.0

@@ -1,0 +1,20 @@
+video_processing:
+  frame_interval: 1  # Extract 1 frame per second
+  output_dir: "data/frames"
+
+object_detection:
+  model: "yolov8n.pt"  # Using YOLOv8 nano model
+  confidence_threshold: 0.5
+
+ocr_processing:
+  tesseract_config: "--oem 3 --psm 6"  # Default Tesseract configuration
+  min_confidence: 0.7
+
+database:
+  mongodb_uri: "mongodb://localhost:27017"
+  database_name: "store_ocr"
+  collection_name: "products"
+
+validation:
+  google_cloud_vision_enabled: false  # Set to true when credentials are configured
+  min_validation_confidence: 0.8
